@@ -22,7 +22,13 @@ public class HandlingDropDownList {
 
         WebElement element = driver.findElement(By.id("oldSelectMenu"));
         Select select = new Select(element);
+        //Select value by index
         select.selectByIndex(2);
+
+        //Select value by value
+        select.selectByValue("2");
+
+
 
     }
 
